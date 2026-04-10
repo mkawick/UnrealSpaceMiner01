@@ -2,12 +2,12 @@
 #pragma once
 
 #include "MassEntityTypes.h"
-#include "SpaceMinerTypes.h"
+#include "../Mining/SpaceMinerTypes.h"
 #include "AsteroidFragments.generated.h"
 
 // 1. Fragment for the rotational movement
 USTRUCT()
-struct SPACEMINER_API FAsteroidSpinFragment : public FMassFragment
+struct SPACEMINER01_API FAsteroidSpinFragment : public FMassFragment
 {
     GENERATED_BODY()
 
@@ -22,7 +22,7 @@ struct SPACEMINER_API FAsteroidSpinFragment : public FMassFragment
 
 // 2. Fragment for the mineral content and "health"
 USTRUCT()
-struct SPACEMINER_API FMineralFragment : public FMassFragment
+struct SPACEMINER01_API FMineralFragment : public FMassFragment
 {
     GENERATED_BODY()
 
