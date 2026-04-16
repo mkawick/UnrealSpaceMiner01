@@ -7,7 +7,11 @@
 		{
 			"Name": "SpaceMiner01",
 			"Type": "Runtime",
-			"LoadingPhase": "Default"
+			"LoadingPhase": "Default",
+			"AdditionalDependencies": [
+				"MassEntity",
+				"MassSpawner"
+			]
 		}
 	],
 	"Plugins": [
@@ -19,15 +23,23 @@
 			]
 		},
 		{
-			"Name": "MassEntity",
-			"Enabled": true
-		},
-		{
 			"Name": "MassGameplay",
 			"Enabled": true
 		},
 		{
 			"Name": "MassAI",
+			"Enabled": true
+		},
+		{
+			"Name": "StructUtils",
+			"Enabled": true
+		},
+		{
+			"Name": "MassEntity",
+			"Enabled": true
+		},
+		{
+			"Name": "MassCrowd",
 			"Enabled": true
 		}
 	]

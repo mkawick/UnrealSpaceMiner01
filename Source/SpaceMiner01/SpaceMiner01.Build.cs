@@ -14,6 +14,7 @@ public class SpaceMiner01 : ModuleRules
 		"Engine", 
 		"InputCore", 
 		"EnhancedInput",
+		"StructUtils",
 		// Mass Specific Modules
 		"MassEntity",
 		"MassCommon",
@@ -21,7 +22,8 @@ public class SpaceMiner01 : ModuleRules
 		"MassRepresentation",
 		"MassSpawner",    // Usually required for the Spawner Actor
 		"MassMovement",   // Often where the transform logic lives
-		"StructUtils"
+		"MassNavigation",
+		"DeveloperSettings" 
 		});
 
 		PrivateDependencyModuleNames.AddRange(new string[] {  });

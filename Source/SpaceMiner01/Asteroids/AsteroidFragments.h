@@ -37,3 +37,21 @@ struct SPACEMINER01_API FMineralFragment : public FMassFragment
     UPROPERTY(EditAnywhere, Category = "Mass")
     int32 MineralCount = 50;
 };
+
+USTRUCT()
+struct SPACEMINER01_API FAsteroidOrbitFragment : public FMassFragment
+{
+    GENERATED_BODY()
+
+    UPROPERTY(EditAnywhere, Category = "Orbit")
+    FVector OrbitCenter = FVector::ZeroVector;
+
+    UPROPERTY(EditAnywhere, Category = "Orbit")
+    float OrbitRadius = 5000.f;
+
+    UPROPERTY(EditAnywhere, Category = "Orbit")
+    float OrbitSpeed = 0.2f; // Radians per second
+
+    UPROPERTY(EditAnywhere, Category = "Orbit")
+    float CurrentAngle = 0.f;
+};

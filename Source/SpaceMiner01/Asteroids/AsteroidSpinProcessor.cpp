@@ -1,6 +1,7 @@
 
-#include "MassCommonFragments.h" // For FTransformFragment
 #include "AsteroidSpinProcessor.h"
+
+#include "MassCommonFragments.h" // For FTransformFragment
 #include "AsteroidFragments.h"
 #include "MassExecutionContext.h"
 #include "MassProcessor.h"
@@ -10,14 +11,6 @@ UAsteroidSpinProcessor::UAsteroidSpinProcessor()
 {
     // We want this to run during the main movement phase
     ExecutionOrder.ExecuteInGroup = FName("Movement");
-    
-   /* EntityQuery.AddRequirement<FTransformFragment>(EMassFragmentAccess::ReadWrite);
-    EntityQuery.AddRequirement<FAsteroidSpinFragment>(EMassFragmentAccess::ReadOnly);
-    
-    EntityQuery.AddTagRequirement<FAsteroidTag>(EMassFragmentPresence::All);
-
-    // This is CRITICAL in 5.7
-    EntityQuery.RegisterWithProcessor(*this);*/
 }
 
 void UAsteroidSpinProcessor::ConfigureQueries(const TSharedRef < FMassEntityManager > & EntityManager)

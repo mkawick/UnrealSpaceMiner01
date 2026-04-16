@@ -1,0 +1,7 @@
+https://youtu.be/CnftkJcLYxs?t=1440
+
+So, I attempted to us ML/AI to create asteroid spawning but asteroids never appeared
+
+I began the above tutorial in an effort to prepare for Astrid entertainment. 
+
+Finished... it worked the first time
